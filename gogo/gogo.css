@@ -1,15 +1,40 @@
 * {
     margin: 0px;
+    text-decoration: none;
 }
 
 .div {
-    width: 60%;
+    width: 58.5%;
+}
+
+.width-100px {
+    height: 100px;
 }
 
 .width-50 {
     width: 50%;
-    height: 500px;
-    border-radius: 10px;
+    height: 390px;
+    border-radius: 5px;
+}
+
+.padding-top5 {
+    padding-top: 5px;
+}
+
+.humuus-padd {
+    padding: 8px, 15px;
+}
+
+.back-c-gray {
+    background-color: rgb(224, 221, 221);
+}
+
+.border-radius5 {
+    border-radius: 5px;
+}
+
+.padd {
+    padding: 10%;
 }
 
 .flex {
@@ -40,8 +65,20 @@
     gap: 10px;
 }
 
+.margin-top-10px {
+    margin-top: 10px;
+}
+
+.margin-bott-20px {
+    margin-bottom: 20px;
+}
+
+.margin-top-30px {
+    margin-top: 30px;
+}
+
 .gapbott-10px {
-    column-gap: 10px;
+    row-gap: 10px;
 }
 
 .topmargin {
@@ -52,8 +89,44 @@
     background-color: black;
 }
 
-.background-color-yellow {
-    background-color: yellow;
+.width-15 {
+    width: 15%;
+}
+
+.text-black {
+    color: black;
+}
+
+.back-c-orange {
+    background-color: orange;
+}
+
+.opacity {
+    opacity: 0.3;
+}
+
+.padding-top10 {
+    padding-top: 10px;
+}
+
+.padding-right30 {
+    padding-right: 30px;
+}
+
+.font-size12 {
+    font-size: 12px;
+}
+
+.font-size13 {
+    font-size: 13px;
+}
+
+.font-size26 {
+    font-size: 26px;
+}
+
+.border-radius {
+    border-radius: 50px;
 }
 
 .grid {
