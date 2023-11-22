@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+}
+
+.div {
+    width: 60%;
+}
+
+.width-50 {
+    width: 50%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.bugd-tentsuu-ezelne {
+    justify-content: space-evenly;
+}
+
+.hoyrtalasa-jhn-zai {
+    justify-content: space-around;
+}
+
+.main-axis-center {
+    justify-content: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.gap-30px {
+    gap: 30px;
+}
+
+.gap-10px {
+    gap: 10px;
+}
+
+.gapbott-10px {
+    column-gap: 10px;
+}
+
+.topmargin {
+    margin-top: 30px;
+}
+
+.background-color-black {
+    background-color: black;
+}
+
+.background-color-yellow {
+    background-color: yellow;
+}
+
+.grid {
+    display: grid;
+}
+
+.huwaalt-4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 300px);
+}
+
+.slide:nth-child(1) {
+    background-color: black;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    border-radius: 10px;
+}
+
+.slide:nth-child(2) {
+    background-color: black;
+    grid-row: 1/2;
+    border-radius: 10px;
+    grid-column: 2/3;
+}
+
+.slide:nth-child(3) {
+    background-color: black;
+    grid-row: 1/2;
+    border-radius: 10px;
+    grid-column: 3/4;
+}
+
+.slide:nth-child(4) {
+    background-color: black;
+    grid-row: 1/2;
+    border-radius: 10px;
+    grid-column: 4/5;
+}
