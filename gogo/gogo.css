@@ -97,6 +97,11 @@
     color: black;
 }
 
+.text-slide {
+    font-size: 14px;
+    line-height: 22px;
+}
+
 .back-c-orange {
     background-color: orange;
 }
@@ -139,29 +144,35 @@
 }
 
 .slide:nth-child(1) {
-    background-color: black;
     grid-row: 1/2;
     grid-column: 1/2;
     border-radius: 10px;
 }
 
 .slide:nth-child(2) {
-    background-color: black;
     grid-row: 1/2;
     border-radius: 10px;
     grid-column: 2/3;
 }
 
 .slide:nth-child(3) {
-    background-color: black;
     grid-row: 1/2;
     border-radius: 10px;
     grid-column: 3/4;
 }
 
 .slide:nth-child(4) {
-    background-color: black;
     grid-row: 1/2;
     border-radius: 10px;
     grid-column: 4/5;
 }
+
+.budag1 {
+    background: linear-gradient(180deg, #fff, #f7f7f7);
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner1:hover {}
