@@ -134,6 +134,7 @@ function weekend() {
       console.log("ene odor bish bn");
   }
 }
+// hanshiin bodlogo #1
 
 function bodlogo() {
   // console.log(
@@ -310,6 +311,195 @@ function bodlogo() {
       break;
     default:
       console.log("deerh 1,2,3,4 ogno uu");
+      break;
+  }
+}
+// cola-1200 sprite 1500 alpengold 2000 suu 2200 talh 1000 zairmag 500 bohi 150 arhi 15000
+//garaas awah dewsgert 1.5000 2.10000 3.20000
+//hariulah dewsgert 50 , 100 , 500 , 1000, 5000 , 10000
+//ajjillaga 1t hereglegch  mungu hiine avah dewsgert oorig awahguie hariult  bodno  ymr2 dewsgert heden shirhegig bodno
+
+function bodlogo2() {
+  console.log(
+    "tanii hudaldaj awah baraa:\n 1.Cola-1200\n 2.Sprite-1500 \n 3.Alpengold-2000 \n 4. Suu-2200 \n 5. talh-1000 \n 6. zairmag-500 \n 7. bohi-150 \n 8. Arhi-15000 "
+  );
+  let baraa = window.prompt(
+    "tanii hudaldaj awah baraa:\n 1.Cola-1200\n 2.Sprite-1500 \n 3.Alpengold-2000 \n 4. Suu-2200 \n 5. talh-1000 \n 6. zairmag-500 \n 7. bohi-150 \n 8. Arhi-15000 "
+  );
+  let value = window.prompt(
+    "ta zuwhun\n 1. 5000 \n 2. 10000 \n 3. 20000 dewsgerteer guilgee hiine !"
+  );
+  value = 1 * value;
+  if (value === null) {
+    console.log("mungun dewsgert oruulagui bn!");
+  }
+  switch (value) {
+    case 1:
+      value = 5000;
+      break;
+    case 2:
+      value = 10000;
+      break;
+    case 3:
+      value = 20000;
+      break;
+    default:
+      console.log(
+        "uuchlaarai zuwhun mungun dewsgertin omno bairlah songltuud ogno uu!"
+      );
+      return 0;
+  }
+  value = 1 * value;
+  if (value === 20000 || value === 10000 || value === 5000) {
+  } else {
+    if (typeof value === "number") {
+      console.log(
+        "ta zuwhun\n 1. 5000 \n 2. 10000 \n 3. 20000 dewsgerteer guilgee hiine !"
+      );
+      return 0;
+    } else {
+      console.log("ene string bn");
+    }
+  }
+  if (typeof value === "number") {
+    if (value >= 0) {
+    } else {
+      console.log("- dun bn ");
+      return 0;
+    }
+  } else {
+    console.log("String bn");
+    return 0;
+  }
+
+  baraa = 1 * baraa;
+  if (baraa >= 1 && baraa <= 8) {
+  } else {
+    console.log("Aldaatai utga");
+  }
+  switch (baraa) {
+    case 1:
+      if (value >= 1200) {
+        value = value - 1200;
+        break;
+      } else {
+        console.log("mungun dun hurq bn");
+        return 0;
+      }
+    case 2:
+      if (value >= 1500) {
+        value = value - 1500;
+        break;
+      } else {
+        console.log("mungun dun hurq bn");
+        return 0;
+      }
+    case 3:
+      if (value >= 2000) {
+        value = value - 2000;
+        break;
+      } else {
+        console.log("mungun dun hurq bn");
+        return 0;
+      }
+    case 4:
+      if (value >= 2200) {
+        value = value - 2200;
+        break;
+      } else {
+        console.log("mungun dun hurq bn");
+        return 0;
+      }
+    case 5:
+      if (value >= 1000) {
+        value = value - 1000;
+        break;
+      } else {
+        console.log("mungun dun hurq bn");
+        return 0;
+      }
+    case 6:
+      if (value >= 500) {
+        value = value - 500;
+        break;
+      } else {
+        console.log("mungun dun hurq bn");
+        return 0;
+      }
+    case 7:
+      if (value >= 150) {
+        value = value - 150;
+        break;
+      } else {
+        console.log("mungun dun hurq bn");
+        return 0;
+      }
+    case 8:
+      if (value >= 15000) {
+        value = value - 15000;
+        break;
+      } else {
+        console.log("mungun dun hurq bn");
+        return 0;
+      }
+    default:
+      console.log("Iim utga bhgue !");
+  }
+  console.log("Hariult:" + value);
+  let j = window.prompt(
+    "herew ta zadargaa medeelel awah bol \n 1 \n Ugui bol \n 2 \t darna uu !"
+  );
+  j = 1 * j;
+  switch (j) {
+    case 1:
+      let i = 1;
+      value = 1 * value;
+      let s = value;
+      while (s > 10) {
+        s = s / 10;
+        i = 1 + i;
+      }
+      i = 1 * i;
+      switch (i) {
+        case 4:
+          let k = value / 1000;
+          k = parseInt(k);
+          console.log("1000:" + k);
+          z = value - k * 1000;
+          z = z / 100;
+          z = parseInt(z);
+          console.log("100: " + z);
+          t = value - (1000 * k + z * 100);
+          t = t / 50;
+          t = parseInt(t);
+          console.log("50:" + t);
+
+          break;
+        case 5:
+          let myngat = value / 10000;
+          myngat = 1 * myngat;
+          myngat = parseInt(myngat);
+          console.log("10000:" + myngat);
+          let arawt = value - myngat * 10000;
+          arawt = arawt / 1000;
+          arawt = parseInt(arawt);
+          console.log("1000:" + arawt);
+          let zuut = value - (myngat * 10000 + arawt * 1000);
+          zuut = zuut / 100;
+          zuut = parseInt(zuut);
+          console.log("100:" + zuut);
+          let tawi = value - (myngat * 10000 + arawt * 1000 + zuut * 100);
+          tawi = tawi / 50;
+          tawi = parseInt(tawi);
+          console.log("50:" + tawi);
+      }
+      break;
+    case 2:
+      console.log("bayrlla");
+
+      break;
+    default:
+      console.log("iim utga bhgu bn \n deerh utgin omnih too g ogno uu !");
       break;
   }
 }
