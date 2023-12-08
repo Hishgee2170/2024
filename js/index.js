@@ -586,3 +586,76 @@ function tegshToo() {
 function chessBoard() {
 
 }
+
+function Hoyrtoo() {
+    let a = prompt("to og");
+    let b = prompt("to og");
+    a = a + b;
+    console.log(a);
+}
+
+function kubS_P() {
+    let a = prompt(" 1 tal");
+    let v = a * a * a;
+    let s = a * a * 6;
+    console.log(v + s);
+}
+
+function tegshontsogt() {
+    let a, b = prompt("too og");
+    let s = a * b;
+    let P = 2 * (a + b);
+    console.log(s + P);
+}
+
+function funct() {
+    let y, x = prompt("too og");
+    y = 3 * x - 5;
+    console.log(y);
+}
+
+function funct2() {
+    let y,
+        x = prompt("too og");
+    y = 4 * x * x - 3 * x + 5;
+    console.log(y);
+}
+
+function suulinoron() {
+    let a = prompt("too og");
+    a = a % 10;
+    console.log(a);
+}
+
+function arawtoron() {
+    let a = prompt("too og");
+    a = a / 10;
+    a = a % 10;
+    console.log(a);
+}
+
+function minutsecond() {
+    let a = prompt("too og");
+    let d = a;
+    d = d / 60;
+    a = a % 60;
+    console.log(d + "\t" + a);
+}
+
+function tsagMinutSecond() {
+    let a = prompt("too og");
+    let d = a;
+    d = d / 60; //min
+    let H = d / 60; //tsag
+    uldMin = d % 60
+    uldSecond = a % 60;
+    console.log(H + "tsag \t" + uldMin + "\t" + a);
+}
+
+function minuttosecond() {
+    let a,
+        b = prompt("too og");
+    a = a * 60;
+    a = a + b;
+    console.log(a);
+}
