@@ -659,3 +659,45 @@ function minuttosecond() {
     a = a + b;
     console.log(a);
 }
+
+function baldandorj() {
+    let str = "baldan dorj"
+    str = (str.replace("baldan ", "B.\t"));
+    str = (str.replace("d", "D"));
+    console.log(str);
+}
+
+function tsagminutsecond_second() {
+    let a, b, c = prompt("tsag,minut,second");
+    a = 3600 * a;
+    b = 60 * b;
+    c = 1 * c;
+    console.log(a + b + c);
+}
+
+function nbagtrali() {
+    let n = window.prompt("n!");
+    let i = 0,
+        j = 1,
+        b = 1;
+    while (i < n) {
+        b = b * j;
+        j++;
+        i++;
+    }
+    console.log(b);
+}
+
+function array() {
+    let n = window.prompt("array index?");
+    let s = 0;
+    let l = 0;
+    let lol = [];
+    let a = [];
+    for (let j = 0; j < n; j++) {
+        a[j] = prompt("index :" + j);
+    }
+    for (let i = 0; i < n; i++) {
+
+    }
+}
