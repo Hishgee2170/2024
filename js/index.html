@@ -5,36 +5,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+        #div {
+            color: blue;
+            left: 100px;
+            top: 100px;
+            background-color: green;
+            width: 300px;
+            position: absolute;
+            border-radius: 10px;
+        }
+        
+        #pause {
+            cursor: pointer;
+        }
+        
+        button {
+            border: none;
+            background-color: yellow;
+        }
+        
+        .red {
+            cursor: pointer;
+            background-color: red;
+        }
+        
+        .green {
+            cursor: pointer;
+            background-color: green;
+        }
+        
+        .flex {
+            display: flex;
+            gap: 2px;
+        }
+    </style>
 </head>
 
 <body>
-    <button onclick="alert()">alert</button>
-    <button onclick="console.log(a)">12</button>
-    <button onclick="console.log(car)">car</button>
-    <button onclick="console.log(trrue);">true</button>
-    <button onclick="console.log(A);">12==13</button>
-    <button onclick="bat()">function</button>
-    <button onclick="battet()">tsipr oron oloh</button>
-    <button onclick="oronUrjwer()">2 oron urjwer</button>
-    <button onclick="circle()">bombortsogin ezelhuun toirin perimeter</button>
-    <button onclick="tegsh()">tegsh sondgoi oloh</button>
-    <button onclick="tegshA()">tegsh sondgoi oloh 10 aas ih</button>
-    <button onclick="dun()">dun shalgah</button>
-    <button onclick="weekend()">
-      1-7 hurtel too oruulsnar oruulsan tooni garag garj irne
-    </button>
-    <button onclick="bodlogo()">Hanshiin bodlogo</button>
-    <button onclick="bodlogo2()">automachine</button>
-    <button onclick="nasArray()">12/6 nas</button>
-    <button onclick="bodlogoTglom()">too taah tglom</button>
-    <button onclick="oronOloh()">Oron oloh</button>
-    <button onclick="gyhewle()">gy hewle #4</button>
-    <button onclick="gyhewle2()">gy hewle #4-2</button>
-    <button onclick="gyhewle3()">gy hewle #4-3</button>
-    <button onclick="tegshToo()">1-100 tegsh too</button>
-    <button onclick="chessBoard()"> chessBoard</button>
-    <button onclick="baldandorj()">baldan dorj</button>
-    <script src="index.js "></script>
+    <div id="div" class="flex">
+        <h1>Chi gomoo bish te?</h1>
+        <button>YES</button>
+        <button>NO</button>
+    </div>
+    <div class="container flex">
+        <div id="go">0</div>
+        <div class="red" id="stop">Reset</div>
+        <div id="pause">pause</div>
+        <div class="green" id="start">Start</div>
+    </div>
+    <script>
+        const mybutton1 = document.getElementsByTagName("button")[0];
+        const mybutton2 = document.getElementsByTagName("button")[1];
+        const startbutton = document.getElementById("start");
+        const stop = document.getElementById("stop");
+        const pause = document.getElementById("pause");
+
+        function hodol() {
+            let run = document.getElementById("div");
+            console.log(run);
+            let T = Math.floor(Math.random() * 600);
+            let S = Math.floor(Math.random() * 600);
+            run.style.top = `${T}px`;
+            run.style.left = `${S}px`;
+        }
+        let timerrr = function timerr() {};
+        let i = 0;
+
+        function go() {
+            second = setInterval(() => {
+                document.getElementById("go").innerHTML = i;
+                i++;
+            }, 1000);
+        }
+
+        function pause() {
+            document.getElementById("go").innerHTML = i;
+            clearInterval(second);
+        }
+
+        function stoop() {
+            i = 0;
+            document.getElementById("go").innerHTML = i;
+            clearInterval(second);
+        }
+
+        function medsen() {
+            window.alert("Medtsen bsishde");
+            window.open("https://www.google.com/", "");
+        }
+        startbutton.addEventListener("click", go);
+        stop.addEventListener("click", stoop);
+        mybutton1.addEventListener("mouseenter", hodol);
+        mybutton2.addEventListener("click", medsen);
+    </script>
 </body>
 
 </html>
