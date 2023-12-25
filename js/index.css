@@ -1,0 +1,52 @@
+.box {
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-top: 10%;
+}
+
+.smallbox {
+  width: 80%;
+  height: 40%;
+}
+
+.flex {
+  display: flex;
+  gap: 40px;
+  justify-content: space-evenly;
+}
+
+.gap5huwi {
+  gap: 5%;
+}
+
+.dooshotsuw {
+  flex-direction: column;
+}
+
+.justcenter {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: pink;
+}
+
+body {
+  background-image: url("https://sph.umich.edu/pursuit/2020posts/2020images/Sleep101.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
