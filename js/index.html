@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="flex">
-      <div class="box gap5huwi flex dooshotsuw justcenter align-center">
-        <div class="smallbox flex justcenter align-center">
-          <h2>To do</h2>
+        <div class="addTaskk">
+            <div class="addTaskContainer">
+                <input type="text">
+                <input type="text">
+
+            </div>
         </div>
-        <button class="smallbox flex justcenter align-center">
+        <div id="box1" class="box gap5huwi flex dooshotsuw justcenter align-center" draggable="true">
+            <div class="smallbox flex justcenter align-center">
+                <h2>To do</h2>
+            </div>
+            <button id="mybutt1" class="smallbox flex justcenter align-center">
           + add card
         </button>
-      </div>
-      <div class="box gap5huwi flex dooshotsuw justcenter align-center">
-        <div class="smallbox flex justcenter align-center">
-          <h2>In progress</h2>
+
         </div>
-        <button class="smallbox flex justcenter align-center">
+        <div id="box2" class="box gap5huwi flex dooshotsuw justcenter align-center" draggable="true">
+            <div class="smallbox flex justcenter align-center">
+                <h2>In progress</h2>
+            </div>
+            <button id="mybutt2" class="smallbox flex justcenter align-center">
           + add card
         </button>
-      </div>
-      <div class="box gap5huwi flex dooshotsuw justcenter align-center">
-        <div class="smallbox flex justcenter align-center">
-          <h2>Stuck</h2>
         </div>
-        <button class="smallbox flex justcenter align-center">
+        <div id="box3" class="box gap5huwi flex dooshotsuw justcenter align-center" draggable="true">
+            <div class="smallbox flex justcenter align-center">
+                <h2>Stuck</h2>
+            </div>
+            <button id="mybutt3" class="smallbox flex justcenter align-center">
           + add card
         </button>
-      </div>
-      <div class="box gap5huwi flex dooshotsuw justcenter align-center">
-        <div class="smallbox flex justcenter align-center">
-          <h2>Done</h2>
         </div>
-        <button class="smallbox flex justcenter align-center">
+        <div id="box4" class="box gap5huwi flex dooshotsuw justcenter align-center" draggable="true">
+            <div class="smallbox flex justcenter align-center">
+                <h2>Done</h2>
+            </div>
+            <button id="mybutt4" class="smallbox flex justcenter align-center">
           + add card
         </button>
-      </div>
+        </div>
     </div>
-  </body>
+    <script src="index.js"></script>
+</body>
+
 </html>

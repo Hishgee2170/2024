@@ -1,52 +1,72 @@
 .box {
-  width: 250px;
-  height: 150px;
-  border-radius: 10px;
-  background-color: #fff;
-  margin-top: 10%;
+    width: 250px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 10%;
 }
 
 .smallbox {
-  width: 80%;
-  height: 40%;
+    width: 80%;
+    height: 40%;
 }
 
 .flex {
-  display: flex;
-  gap: 40px;
-  justify-content: space-evenly;
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
 }
 
 .gap5huwi {
-  gap: 5%;
+    gap: 5%;
 }
 
 .dooshotsuw {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .justcenter {
-  justify-content: center;
+    justify-content: center;
 }
 
 .align-center {
-  align-items: center;
+    align-items: center;
 }
 
 button {
-  cursor: pointer;
-  background-color: #fff;
-  border: none;
-  border-radius: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
 }
 
 button:hover {
-  background-color: pink;
+    background-color: pink;
 }
 
 body {
-  background-image: url("https://sph.umich.edu/pursuit/2020posts/2020images/Sleep101.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+    background-image: url("https://images.inc.com/uploaded_files/image/1920x1080/getty_638884198_366705.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.addTaskk {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top: 0px;
+    width: 1000px;
+    height: 102.5%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.addTaskContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 70%;
+    background-color: wheat;
+    border-radius: 8px;
 }
