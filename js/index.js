@@ -15,8 +15,8 @@ myButton[3] = document.getElementById("mybutt4");
 // }
 
 function addTaskShow() {
-    let TaskShow = document.getElementsByClassName("addTaskk")[0];
-    TaskShow.style.display = "flex";
+  let TaskShow = document.getElementsByClassName("addTaskk")[0];
+  TaskShow.style.display = "flex";
 }
 
 // function hide() {
