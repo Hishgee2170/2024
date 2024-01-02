@@ -20,19 +20,18 @@ let students = [{
     },
 ];
 
-function sameAge(Age) {
+function sameAge(sameAges) {
     let output = [];
-    for (let i = 0; i < Age.length; i++) {
-        for (let j = i; j < Age.length; j++) {
-            if (Age[i].age == Age[j].age) {
-                output.push(Age[i].age);
-                break;
-            } else {}
+    for (let i = 0; i < sameAges.length; i++) {
+        if (output[sameAges[i].age]) {
+            output[sameAges[i].age]++;
+        } else {
+            output[sameAges[i].age] = 1;
         }
     }
     return output;
 }
-console.log(sameAge(students));
+console.log("dawhtssan nasnuud:" + sameAge(students));
 
 function sameGender(Gender) {
     let huisnud = {};
