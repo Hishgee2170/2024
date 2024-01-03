@@ -71,25 +71,68 @@
 //     return numNames;
 // }
 // console.log(numName(students));
-const arr = [-1, 5, 3, -4, -5, -6, 11, -8, 0];
+// const arr = [-1, 5, 3, -2, 9, 21, -12, 12, 34, 2, 1, -2, -4, -12];
 
-function returnSecondArray(secondArray) {
-    let n = Math.floor(secondArray.length / 2);
-    let sum = new Array(n);
-    sum.fill(0);
-    for (let i = 0; i < secondArray.length; i++) {
-        if (i < secondArray.length / 2) {
-            for (let j = i; j < i + secondArray.length / 2; j++) {
-                sum[i] = sum[i] + secondArray[j];
-            }
-        }
+// function returnSecondArray(secondArray) {
+//     let n = Math.floor(secondArray.length / 2);
+//     let sum = new Array(n);
+//     sum.fill(0);
+//     for (let i = 0; i < secondArray.length; i++) {
+//         if (i < secondArray.length / 2) {
+//             for (let j = i; j < i + secondArray.length / 2; j++) {
+//                 sum[i] = sum[i] + secondArray[j];
+//             }
+//         }
+//     }
+//     let output = sum[0];
+//     for (let index = 0; index < sum.length; index++) {
+//         if (output < sum[index]) {
+//             output = sum[index];
+//         }
+//     }
+//     return output;
+// }
+// console.log(returnSecondArray(arr));
+// const arr = [1, 2, 3, 4, 5];
+// function target(array) {
+//   let index = [];
+//   target = 9;
+//   k = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = 0; j < array.length; j++) {
+//       if (target == array[i] + array[j]) {
+//         index.push(i);
+//         index.push(j);
+//         k++;
+//       }
+//     }
+//   }
+//   console.log(k + " ->" + "Bolomj bna!");
+//   return index;
+// }
+// console.log(target(arr));
+const String = "The quick brown fox jumps over the lazy dog";
+
+function longString(str) {
+  const myArray = str.split(" ");
+  let char = [];
+  let go = new Array(myArray.length);
+  go.fill(0);
+  for (let i = 0; i < myArray.length; i++) {
+    char[i] = myArray[i].split(" ");
+  }
+  let long = 0;
+  let outputIndex = 0;
+  for (let j = 0; j < char.length; j++) {
+    for (let index = 0; index < char[j][0].length; index++) {
+      go[j] = go[j] + 1;
     }
-    let output = sum[0];
-    for (let index = 0; index < sum.length; index++) {
-        if (output < sum[index]) {
-            output = sum[index];
-        }
+    if (long < go[j]) {
+      long = go[j];
+      outputIndex++;
     }
-    return output;
+  }
+  let outputString = myArray[outputIndex - 1];
+  return outputString;
 }
-console.log(returnSecondArray(arr));
+console.log(longString(String));
