@@ -111,28 +111,74 @@
 //   return index;
 // }
 // console.log(target(arr));
-const String = "The quick brown fox jumps over the lazy dog";
+// const String = "The quick brown fox jumps over the lazy dog";
 
-function longString(str) {
-  const myArray = str.split(" ");
-  let char = [];
-  let go = new Array(myArray.length);
-  go.fill(0);
-  for (let i = 0; i < myArray.length; i++) {
-    char[i] = myArray[i].split(" ");
-  }
-  let long = 0;
-  let outputIndex = 0;
-  for (let j = 0; j < char.length; j++) {
-    for (let index = 0; index < char[j][0].length; index++) {
-      go[j] = go[j] + 1;
+// function longString(str) {
+//   const myArray = str.split(" ");
+//   let char = [];
+//   let go = new Array(myArray.length);
+//   go.fill(0);
+//   for (let i = 0; i < myArray.length; i++) {
+//     char[i] = myArray[i].split(" ");
+//   }
+//   let long = 0;
+//   let outputIndex = 0;
+//   for (let j = 0; j < char.length; j++) {
+//     for (let index = 0; index < char[j][0].length; index++) {
+//       go[j] = go[j] + 1;
+//     }
+//     if (long < go[j]) {
+//       long = go[j];
+//       outputIndex++;
+//     }
+//   }
+//   let outputString = myArray[outputIndex - 1];
+//   return outputString;
+// }
+// console.log(longString(String));
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function arrayreverse(arr) {
+    let reverseArray = [];
+    let j = 0;
+    let string = "";
+    for (let i = arr.length - 1; i >= 0; i--) {
+        reverseArray[j] = arr[i];
+        // string = string + reverseArray[j].toString();
+        string = string + `${reverseArray[j]}`;
+        j++;
+
     }
-    if (long < go[j]) {
-      long = go[j];
-      outputIndex++;
-    }
-  }
-  let outputString = myArray[outputIndex - 1];
-  return outputString;
+    console.log("reverseArray:" + " " + reverseArray);
+    return string;
 }
-console.log(longString(String));
+console.log(arrayreverse(array));
+// const bject = {
+//     a: 1,
+//     c: 3,
+//     b: 2,
+// };
+
+// function maxValue(obj) {
+//     let values = new Array(Object.keys(obj).length);
+//     let keys = new Array(Object.keys(obj).length);
+
+//     for (let i = 0; i < Object.keys(obj).length; i++) {
+//         values[i] = Object.values(obj)[i];
+//     }
+//     for (var i = 0; i < values.length; i++) {
+//         for (var j = 0; j < values.length - i - 1; j++) {
+//             if (values[j] > values[j + 1]) {
+//                 var temp = values[j];
+//                 values[j] = values[j + 1];
+//                 values[j + 1] = temp;
+//             }
+//         }
+//     }
+//     for (let g = 0; g < values.length; g++) {
+//         keys[i] =
+
+//     }
+//     return values;
+// }
+// console.log(maxValue(bject));ls
