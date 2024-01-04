@@ -19,7 +19,6 @@
 //         huis: "Female",
 //     },
 // ];
-
 // function sameAge(sameAges) {
 //     let output = [];
 //     for (let i = 0; i < sameAges.length; i++) {
@@ -32,7 +31,6 @@
 //     return output;
 // }
 // console.log("dawhtssan nasnuud:" + sameAge(students));
-
 // function sameGender(Gender) {
 //     let huisnud = {};
 //     for (let i = 0; i < Gender.length; i++) {
@@ -45,7 +43,6 @@
 //     return huisnud;
 // }
 // console.log(sameGender(students));
-
 // function numAge(numAge) {
 //     let a = 0;
 //     for (let i = 0; i < numAge.length; i++) {
@@ -57,14 +54,12 @@
 //     };
 // }
 // console.log(numAge(students));
-
 // function numName(numNames) {
 //     let input = [];
 //     input[0] = "bold";
 //     input[1] = "erdene";
 //     input[2] = "nogoi-1";
 //     input[3] = "tom nohoi 007 hha";
-
 //     for (let i = 0; i < numNames.length; i++) {
 //         numNames[i]["Owogner"] = [`${input[i]}`];
 //     }
@@ -72,7 +67,6 @@
 // }
 // console.log(numName(students));
 // const arr = [-1, 5, 3, -2, 9, 21, -12, 12, 34, 2, 1, -2, -4, -12];
-
 // function returnSecondArray(secondArray) {
 //     let n = Math.floor(secondArray.length / 2);
 //     let sum = new Array(n);
@@ -112,7 +106,6 @@
 // }
 // console.log(target(arr));
 // const String = "The quick brown fox jumps over the lazy dog";
-
 // function longString(str) {
 //   const myArray = str.split(" ");
 //   let char = [];
@@ -136,33 +129,14 @@
 //   return outputString;
 // }
 // console.log(longString(String));
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-function arrayreverse(arr) {
-    let reverseArray = [];
-    let j = 0;
-    let string = "";
-    for (let i = arr.length - 1; i >= 0; i--) {
-        reverseArray[j] = arr[i];
-        // string = string + reverseArray[j].toString();
-        string = string + `${reverseArray[j]}`;
-        j++;
-
-    }
-    console.log("reverseArray:" + " " + reverseArray);
-    return string;
-}
-console.log(arrayreverse(array));
 // const bject = {
 //     a: 1,
 //     c: 3,
 //     b: 2,
 // };
-
 // function maxValue(obj) {
 //     let values = new Array(Object.keys(obj).length);
 //     let keys = new Array(Object.keys(obj).length);
-
 //     for (let i = 0; i < Object.keys(obj).length; i++) {
 //         values[i] = Object.values(obj)[i];
 //     }
@@ -177,8 +151,13 @@ console.log(arrayreverse(array));
 //     }
 //     for (let g = 0; g < values.length; g++) {
 //         keys[i] =
-
 //     }
 //     return values;
 // }
-// console.log(maxValue(bject));ls
+// console.log(maxValue(bject));
+// let daysInput = 1000;
+// let year = 2023;
+// let luna = 1;
+// let day = 4;
+// function newYear(daays) {
+// }
